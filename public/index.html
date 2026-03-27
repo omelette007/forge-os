@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forge OS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Forge OS</h1>
+      <p>Analyse et amélioration de code</p>
+    </header>
+
+    <main>
+      <section class="editor-panel">
+        <h2>Code</h2>
+        <textarea id="codeInput" placeholder="Colle ton code ici..."></textarea>
+        <div class="actions">
+          <button id="analyzeBtn">Analyser</button>
+        </div>
+      </section>
+
+      <section class="results-panel">
+        <h2>Résultats</h2>
+        <div class="result-box">
+          <strong>Score :</strong>
+          <span id="score">--</span>
+        </div>
+        <div class="result-box">
+          <strong>Message :</strong>
+          <span id="message">Aucune analyse</span>
+        </div>
+
+        <h3>Problèmes détectés</h3>
+        <ul id="issues"></ul>
+
+        <h3>Améliorations</h3>
+        <ul id="improvements"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
